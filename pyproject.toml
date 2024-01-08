@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "textual-calculator"
+version = "0.1.0"
+description = ""
+authors = ["Dave Pearson <davep@textualize.io>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+textual = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+calculator = "textual_calculator.calculator:run"
